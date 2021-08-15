@@ -54,6 +54,7 @@ classDiagram
      +Integer entry_time
     }
 ```
+*Note: The class diagram is written in [mermaid](https://github.com/mermaid-js/mermaid).
 
 The data structure of the main program is represented in the class diagram above. The brief explanation of each class are as follow:
 
@@ -65,7 +66,7 @@ The data structure of the main program is represented in the class diagram above
 
 - **Parser**: A utility class to parse the input file and invoke the correct methods on the car park.
 
-#Problem Statement
+## Problem Statement
 Your task is to design an automated valet car parking system where you manage a parking space for vehicles as they enter/exit it and manage its revenue. The data provided to you(refer to the Data Description section below) would include the number of parking lots available and the entry/exit details of each vehicle. For the purpose of this question you can assume that Cars and Motorcycles are the only two types of vehicles.
 Each vehicle upon entry can only park in a lot available for that vehicle type. If there are no lots available for that vehicle type, it should be denied an entry into the space. As we’re building a valet car park, all the lots in the parking space can be considered as being distinctly numbered eg: CarLot1, CarLot2,..., MotorcycleLot1, MotorcycleLot2,.... Each vehicle upon entering is allotted to the lot with the lowest number for that vehicular type eg: a car entering a parking space with the available lots CarLot2, CarLot4, CarLot5 would be assigned to CarLot2. When a vehicle wants to exit the car park, the system will return the parking lot that the vehicle will be removed from and charge them an appropriate parking fee(rounded up to the nearest hour, i.e., 1hr 1min is charged as 2hr): $1/hour for a motorcycle and $2/hour for a car.
 
