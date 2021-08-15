@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+$: << File.join(File.dirname(__FILE__), '..', 'lib')
+
+require 'parser'
+
+input_array = ARGV
+file_name = input_array[0]
+Parser.new(file_name).run!
